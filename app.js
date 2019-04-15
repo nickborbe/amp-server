@@ -73,8 +73,8 @@ app.use(cors({
 const index = require('./routes/index');
 app.use('/', index);
 
-const taskRoutes = require('./routes/tasks')
-app.use('/api', taskRoutes);
+const videoRoutes = require('./routes/videos')
+app.use('/api', videoRoutes);
 
 const authroutes = require('./routes/authroutes')
 app.use('/api', authroutes);
