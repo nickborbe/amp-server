@@ -18,10 +18,7 @@ authRoutes.post('/signup', (req, res, next) => {
       return;
     }
 
-    // if(password.length < 7){
-    //     res.status(400).json({ message: 'Please make your password at least 7 characters long for secutiry purposes.' });
-    //     return;
-    // }
+ 
   
     User.findOne({ username }, '_id', (err, foundUser) => {
       if (foundUser) {
