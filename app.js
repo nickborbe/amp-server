@@ -69,12 +69,10 @@ app.use(cors({
   credentials: true,
   origin: ['http://localhost:3000']
 }))
+// get rid of this before deploying^
 
-const index = require('./routes/index');
-app.use('/', index);
 
-const videoRoutes = require('./routes/videos')
-app.use('/api', videoRoutes);
+
 
 const authroutes = require('./routes/authroutes')
 app.use('/api', authroutes);
