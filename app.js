@@ -73,5 +73,9 @@ const authroutes = require('./routes/authroutes')
 app.use('/api', authroutes);
 
 
+const mailRoutes = require('./routes/mailchimproutes')
+app.use('/api', mailRoutes);
+
+
 
 module.exports = app;
